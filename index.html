@@ -59,6 +59,36 @@
             border: 10px solid black;
             box-sizing: border-box;
         }
+        a[href="https://www.google.com"]:link,a[href="https://www.google.com"]:visited{
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            padding: 5px 15px;
+            border-radius: 15px;
+            margin: 30px 20px;
+        }
+        a[href="https://www.google.com"]:hover,a[href="https://www.google.com"]:active{
+            background-color: yellow;
+            color: red;
+        }
+        a[href="https://github.com/mukesh1308"]:link,a[href="https://github.com/mukesh1308"]:visited{
+            display: inline-block;
+            font-size: 20px;
+            color: red;
+            background-color: yellow;
+            padding: 5px 15px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 0px black;
+            margin: 30px 20px;
+            /* transition: 0.2s; */
+            position: relative;
+        }
+        a[href="https://github.com/mukesh1308"]:hover,a[href="https://github.com/mukesh1308"]:active{
+            box-shadow: 0px 0px 0px black;
+            top:5px;
+            left:5px;
+        }
     </style>
 </head>
 <body>
@@ -71,7 +101,7 @@
     <img class="small-image" src="image/hader image.png"><br>
     <div class="border-text">mukesh</div>
     <div id="id-1">this is id !!!</div><hr>
-    <section class="box-model">
+    <section style="background-color: silver; padding: 5px;" class="box-model">
         <h1>box model</h1>
         <div>
             <h3>content box</h3>
@@ -85,5 +115,9 @@
 
         </div>
     </section>
+    <hr>
+    <h1>link</h1>
+    <a href="https://www.google.com">google</a><br>
+    <a href="https://github.com/mukesh1308">github</a>
 </body>
 </html>
