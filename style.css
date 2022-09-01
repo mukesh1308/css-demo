@@ -27,6 +27,8 @@
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-gap: 5px;
     grid-auto-rows: 100px;
+    justify-content: stretch;
+    align-items: stretch;
     /* justify-content: center;
     align-items: center; */
 }
@@ -48,4 +50,13 @@
 }
 .block-1{
     grid-area: 1/1/2/4;
+}
+.flex-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.flex-cont .block{
+    width: 200px;
 }
