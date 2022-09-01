@@ -8,3 +8,17 @@
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 0.5px black;
 }
+:root{
+    --bg:yellow;
+}
+.css-variable{
+    --heading:black;
+    --para:rgb(82, 70, 70);
+}
+.css-variable h1{
+    color: var(--heading);
+}
+.css-variable p{
+    color: var(--para);
+    background-color: var(--bg);
+}
