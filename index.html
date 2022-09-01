@@ -36,6 +36,29 @@
             background-color: gold;
             color: black;
         }
+        .content-box{
+            display: inline-block;
+            background-color: blue;
+        }
+        .content-box div{
+            display: inline-block;
+            background-color: aqua;
+            padding: 50px;
+            margin: 50px;
+            border: 10px solid black;
+        }
+        .border-box{
+            display: inline-block;
+            background-color: yellow;
+        }
+        .border-box div{
+            display: inline-block;
+            background-color: yellowgreen;
+            padding: 50px;
+            margin: 50px;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -47,6 +70,20 @@
     <h1>images</h1>
     <img class="small-image" src="image/hader image.png"><br>
     <div class="border-text">mukesh</div>
-    <div id="id-1">this is id !!!</div>
+    <div id="id-1">this is id !!!</div><hr>
+    <section class="box-model">
+        <h1>box model</h1>
+        <div>
+            <h3>content box</h3>
+            <div class="content-box">
+                <div>this is content</div>
+            </div>
+            <h3>border box</h3>
+            <div class="border-box">
+                <div>this is content</div>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
